@@ -97,12 +97,12 @@ loadJSON(caniuseDataUrl, function(res) {
 		// *************************
 
 		// HTML Encoding for special characters
-		var featureDescription = feature.description;
-			featureDescription = featureDescription.replace(/</g, "&lt;");
-			featureDescription = featureDescription.replace(/>/g, "&gt;");
+		// var featureDescription = feature.description;
+		// 	featureDescription = featureDescription.replace(/</g, "&lt;");
+		// 	featureDescription = featureDescription.replace(/>/g, "&gt;");
 
 		document.getElementById('featureTitle').innerHTML = feature.title;
-		document.getElementById('featureDescription').innerHTML = featureDescription;
+		// document.getElementById('featureDescription').innerHTML = featureDescription;
 		document.getElementById('featureLink').href = 'http://caniuse.com/#feat=' + featureID;
 		document.getElementById('note').innerHTML = 'Global: <span class="y">'+global_y+'%</span> + <span class="a">'+global_a+'%</span> = '+global_total+'%';
 
@@ -269,7 +269,7 @@ loadJSON(caniuseDataUrl, function(res) {
 
 		// DISPLAY ERROR MESSAGE IF FEATURE WASN'T FOUND
 		document.getElementById('featureTitle').innerHTML = 'Uh Oh!';
-		document.getElementById('featureDescription').innerHTML = "The feature <strong>'"+featureID+"'</strong> was not recognized. ";
+		// document.getElementById('featureDescription').innerHTML = "The feature <strong>'"+featureID+"'</strong> was not recognized. ";
 		document.getElementById('featureMain').innerHTML = '';
 	}
 
@@ -310,6 +310,6 @@ if (accessibleColours == 'true') {
   document.body.classList.add("accessible-colours");
 }
 
-document.getElementById("accessibleColoursToggle").addEventListener("click", function() {
-  document.body.classList.toggle("accessible-colours")
-});
+// document.getElementById("accessibleColoursToggle").addEventListener("click", function() {
+//   document.body.classList.toggle("accessible-colours")
+// });

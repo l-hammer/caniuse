@@ -88,8 +88,8 @@ $(document).ready(function() {
 		$('#stepThree').html(exportCode)
 		$('.export-preview').html(preview);
 
-		var stepThree = document.getElementById('copyStepThree');
-		var stepThreeClipboard = new Clipboard(stepThree);
+		// var stepThree = document.getElementById('copyStepThree');
+		// var stepThreeClipboard = new Clipboard(stepThree);
 
 		// LOAD CANIUSE-EMBED.JS SCRIPT AGAIN FOR PREVIEW
 		var head = document.getElementsByTagName('head')[0];
@@ -97,9 +97,6 @@ $(document).ready(function() {
 		script.type = 'text/javascript';
 		script.src = 'caniuse-embed.min.js';
 		head.appendChild(script);
-
-
-		ga('send', 'event', 'button', 'click', 'generate embed');
 
 		return false;
 	})

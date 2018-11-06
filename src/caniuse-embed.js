@@ -12,8 +12,8 @@
 
       if (feature) {
 
-        var url = 'https://caniuse.bitsofco.de/embed/index.html';
-        //var url = 'http://localhost:8000/embed/index.html'
+        // var url = 'https://caniuse.bitsofco.de/embed/index.html';
+        var url = 'http://localhost:8000/embed/index.html'
 
         var iframe = '<iframe src="'+url+'?feat='+feature+'&periods='+periods+'&accessible-colours='+accessibleColours+'" frameborder="0" width="100%" height="400px"></iframe>';
 

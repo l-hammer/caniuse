@@ -1,0 +1,30 @@
+{
+  "name": "caniuse-embed",
+  "version": "1.2.2",
+  "description": "The embed for caniuse",
+  "main": "caniuse-embed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ireade/caniuse-embed.git"
+  },
+  "author": "Ire Aderinokun",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/ireade/caniuse-embed/issues"
+  },
+  "homepage": "https://github.com/ireade/caniuse-embed",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-html": "^1.0.5",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.6"
+  },
+  "dependencies": {
+    "gulp-connect": "^5.2.0"
+  }
+}
